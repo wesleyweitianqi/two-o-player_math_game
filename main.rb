@@ -3,8 +3,8 @@ require './Player';
 require './Question';
 
 
-P1 = Player.new("P1")
 P2 = Player.new("P2")
+P1 = Player.new("P1")
 
 players = Player.all
 

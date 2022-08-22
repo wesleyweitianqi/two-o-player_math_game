@@ -1,4 +1,5 @@
 require "./Player"
+require 'byebug'
 
 class Game
   def switch_player(players)
@@ -19,7 +20,9 @@ class Game
       puts "#{players.first.name}: Seriously? No!"
       players.last.lose_pts
     end 
-    if P2.score == 0 
+    
+    if P2.score == 0
+      # byebug 
       puts "#{P1.name} wins with a score of #{P1.final_score}"
       puts "---------GAME OVER-------"
       puts "Good bye!"
